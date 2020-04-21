@@ -14,6 +14,7 @@
 		78E02275244EAAC300C61BB9 /* Smart_APP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78E02273244EAAC300C61BB9 /* Smart_APP.xcdatamodeld */; };
 		78E02277244EAAC700C61BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E02276244EAAC700C61BB9 /* Assets.xcassets */; };
 		78E0227A244EAAC700C61BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E02278244EAAC700C61BB9 /* LaunchScreen.storyboard */; };
+		78E02283244EAEEC00C61BB9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E02282244EAEEC00C61BB9 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		78E02276244EAAC700C61BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78E02279244EAAC700C61BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78E0227B244EAAC700C61BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78E02282244EAEEC00C61BB9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E02283244EAEEC00C61BB9 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				78E02269244EAAC300C61BB9 /* Smart APP */,
 				78E02268244EAAC300C61BB9 /* Products */,
+				78E02281244EAEEB00C61BB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +72,14 @@
 				78E02273244EAAC300C61BB9 /* Smart_APP.xcdatamodeld */,
 			);
 			path = "Smart APP";
+			sourceTree = "<group>";
+		};
+		78E02281244EAEEB00C61BB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78E02282244EAEEC00C61BB9 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,13 +303,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6ML52V597;
 				INFOPLIST_FILE = "Smart APP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "id.co.lyrid.smartapp.Smart-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,13 +322,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6ML52V597;
 				INFOPLIST_FILE = "Smart APP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "id.co.lyrid.smartapp.Smart-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
